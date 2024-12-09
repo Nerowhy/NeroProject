@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background styling */
+        body {
+            background: url('Wall.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-custom {
+            background-color: rgba(26, 32, 44, 0.8);
+        }
+        .navbar-custom .nav-link, .navbar-custom .navbar-brand {
+            color: #f1faee;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #a8dadc;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, Red, purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            color: yellow;
+        }
+
+        /* Projects Section */
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: Green;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .btn-custom {
+            background-color: Blue;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #1d3557;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        #contact h2 {
+            color: #f8f9fa;
+        }
+        #contact label {
+            color: #d1d5db;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm just someone who is quite
+        interested in the world of programming. I develop web, games, bots and so on. I'm just a self-taught programmer with no school experience.</p>
+        <a href="#projects" class="btn btn-custom">View my project</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">Tentang Diriku</h2>
+        <p class="text-center">Nama saya kholidazis atau saya biasa menggunakan nama samaran yakni Nerowhy saya berumur 18 tahun dengan tinggi 168cm hobi saya Bermain game,Nonton anime,Hunting Saya memiliki prinsip bahwa kesuksesan tidak datang menghampiri tapi kita sendiri yang datang menghampirinya!. mau lihat project yang ku kerjakan silahkan liat di my project yak</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-4">Project Nero</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Tictactoe.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">X/O</h5>
+                        <p class="card-text">Disini saya mampu membuat sebuah permainan yang cukup simple yaitu tictactoe bermodalkan aplikasi acode dengan Javascript sebagai panggung utamanya saya akhirnya bisa membuatnya.</p>
+                        <a href="#" class="btn btn-custom">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Love.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Love.cpp</h5>
+                        <p class="card-text">Bermodalkan Fyp tiktok saya akhirnya mampu membuat love loops itu hanya bermodalkan aplikasi termux dengan internalnya C++ mungkin menurut orang ini simple tapi menurut saya tidak..</p>
+                        <a href="#" class="btn btn-custom">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="Ular.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ular.py</h5>
+                        <p class="card-text">Membuat sebuah permainan simple hanya menggunakan Termux sebagai media internal saya dapat menciptakan permainan yang cukup gampang dimata programer handal tapi sulit dimata anak biasa.</p>
+                        <a href="#" class="btn btn-custom">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
